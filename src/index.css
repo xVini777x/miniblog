@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  font-family: 'Onest', sans-serif;
+}
+
+input::placeholder, textarea::placeholder{
+  font-family: 'Onest', sans-serif;
+}
+
+input:focus, textarea:focus{
+  outline: none;
+}
+
+a, nav, button{
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  color: #000;
+  transition: .4s;
+  font: 1em;
+  cursor: pointer;
+  font-family: 'Onest', sans-serif;
+}
+
+a:hover, nav button:hover{
+  color: #bbb;
+}
