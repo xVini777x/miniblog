@@ -25,6 +25,22 @@ const Navbar = () => {
             Sobre
           </NavLink>
         </li>
+        <li className={styles.item}>
+          <NavLink
+            to="/Register"
+            className={({ isActive }) => (isActive ? styles.active : "")}
+          >
+            Registrar
+          </NavLink>
+        </li>
+        <li className={styles.item}>
+          <NavLink
+            to="/Login"
+            className={({ isActive }) => (isActive ? styles.active : "")}
+          >
+            Login
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );
