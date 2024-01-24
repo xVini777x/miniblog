@@ -1,0 +1,28 @@
+.register .title, .TextInicial{
+text-align: center;
+}
+
+.FormRegister {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.FormRegister .FormRegister__label{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.FormRegister .FormRegister__label span{
+    font-weight: 700;
+}
+
+.FormRegister .FormRegister__label input{
+    border: none;
+    border-bottom: 1px solid #000;
+    min-width: 250px;
+    padding-bottom: 8px;
+}
