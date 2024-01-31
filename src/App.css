@@ -13,6 +13,11 @@
   border-radius: 10px;
 }
 
+.btn-dark{
+  background: #000;
+  border-radius: initial;
+}
+
 .error{
   color: #020101;
   background: rgb(239 175 175);
