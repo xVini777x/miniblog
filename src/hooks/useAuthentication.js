@@ -39,9 +39,8 @@ export const useAuthentication = () => {
         data.password
       );
 
-      await updateProfile(user, {
-        displayName: data.displayName,
-      });
+      // once we get user object then update user display name using following method
+      await user.updateProfile({ displayName: data.displayName });
       setLoading(false);
 
       return user;
@@ -81,7 +80,7 @@ export const useAuthentication = () => {
       setLoading(false);
     } catch (error) {
       let systemErrorMessage;
-      console.log(error)
+      console.log(error);
 
       if (error.message.includes("invalid-credential")) {
         systemErrorMessage = "Usuário ou senha incorreta.";
